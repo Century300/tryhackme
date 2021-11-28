@@ -29,6 +29,11 @@ sudo apt install -y zsh-syntax-highlighting autojump zsh-autosuggestions
 # Clone the powerlevel10k repository to oh-my-zsh directory
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+# Copy Meslo fonts .ttf files into local fonts directory and refresh fonts cache
+mkdir -p ~/.local/share/fonts
+cp ~/Downloads/TryHackMe/Meslo_Font/*ttf ~/.local/share/fonts
+fc-cache -f -v
+
 # Install other useful packages
   # tree - list contents of directories in a tree-like format.
   sudo apt install -y tree
@@ -59,4 +64,7 @@ source $ZSH/oh-my-zsh.sh
 # Run neofetch to see system information
 neofetch
 
-echo '''If you see this line, the installation is successful. If you are already in zsh, please type "source ~/.zshrc" into the terminal or exit & re-open the terminal to see the new zsh customization. If not, you need to type "zsh" to start Z shell first.'''
+echo '''If you see this line, the installation is successful.
+You need to manually change the font in your termianl profile to MesloLGS Regular if you want to use Meslo fonts.
+If you are already in zsh, please type "source ~/.zshrc" into the terminal or exit & re-open the terminal to see the new zsh customization.
+If not, you need to type "zsh" to start Z shell first.'''
