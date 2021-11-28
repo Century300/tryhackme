@@ -1,5 +1,5 @@
 ### Install oh-my-zsh, custom .zshrc, powerlevel10k theme, and other useful packages
-These are 2 bash scripts to fast install some packages to a host machine (particuallyr in TryHackMe.com machines)
+These are 2 bash scripts to fast install some packages to a host machine (particuallyr in TryHackMe.com machines).
 
 I used these scripts to install oh-my-zsh, my .zshrc configuration, powerlevel10k theme, and other useful packages to the Ubuntu & Kali (Linux) machines on TryHackMe.com, I have not tested the scripts with other machines yet.
 
