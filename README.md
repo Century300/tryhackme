@@ -11,7 +11,7 @@ I used these scripts to install oh-my-zsh, my .zshrc configuration, powerlevel10
 ## Instructions
 - git clone https://github.com/Century300/TryHackMe.git ~/Downloads/TryHackMe
 - cd ~/Downloads/TryHacMe
-- sudo chmod +x install_zsh_part*
+- sudo chmod +x install*
 - ./install_zsh_part1.sh
 - _(type Y when you see "Do you want to change your default shell to zsh?")_
 - ./install_zsh_part2.sh
