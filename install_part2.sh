@@ -36,7 +36,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
   sudo apt install neofetch -y
   # htop - interactive process viewer
   sudo apt install htop -y
-
+  
 # Replace the OMZ default $HOME/.zshrc file with this .zshrc content
 echo '''
 # Path to oh-my-zsh installation
@@ -55,5 +55,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 ''' > $HOME/.zshrc
+
+ # Run neofetch to see system information
+ neofetch
 
 echo '''If you see this line, the installation is successful. If you are already in zsh, please type "source ~/.zshrc" into the terminal or exit & re-open the terminal to see the new zsh customization. If not, you need to type "zsh" to start Z shell first.'''
