@@ -31,7 +31,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # Copy Meslo fonts .ttf files into local fonts directory and refresh fonts cache
 mkdir -p ~/.local/share/fonts
-cp ~/Downloads/TryHackMe/Meslo_Font/*ttf ~/.local/share/fonts
+sudo cp ~/Downloads/TryHackMe/Meslo_Font/*ttf ~/.local/share/fonts
 fc-cache -f -v
 
 # Install other useful packages
