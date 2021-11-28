@@ -8,6 +8,9 @@ I used these scripts to install oh-my-zsh, my .zshrc configuration, powerlevel10
 - Plugins used from $HOME/.oh-my-zsh/plugins/: git sudo web-search dirhistory history jsontools colored-man-pages command-not-found autojump
 - Added custom plugins in $HOME/.oh-my-zsh/custom/plugins/: zsh-autosuggestions k zsh-syntax-highlighting
 
+### Other packages
+- tilix terminal emulator, tree, neofetch, htop
+
 ## Instructions
 - git clone https://github.com/Century300/TryHackMe.git ~/Downloads/TryHackMe
 - cd ~/Downloads/TryHacMe
