@@ -64,7 +64,7 @@ source $ZSH/oh-my-zsh.sh
 
 # VTE Configuration for Tilix terminal https://gnunn1.github.io/tilix-web/manual/vteconfig/
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
+        source /etc/profile.d/vte-2.91.sh
 fi
 ''' > $HOME/.zshrc
 
