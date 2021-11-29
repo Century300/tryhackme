@@ -31,7 +31,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # Copy Meslo fonts .ttf files into local fonts directory and refresh fonts cache
 mkdir -p ~/.local/share/fonts
-sudo cp ~/Downloads/TryHackMe/Meslo_Font/*ttf ~/.local/share/fonts
+sudo cp ~/Downloads/tryhackme/Meslo_Font/*ttf ~/.local/share/fonts
 fc-cache -f -v
 
 # Replace the OMZ default $HOME/.zshrc file with this .zshrc content
@@ -60,10 +60,8 @@ source $ZSH/oh-my-zsh.sh
   sudo apt install -y neofetch
   # htop - interactive process viewer
   sudo apt install -y htop
-
-# Install tilix - Tiling GTK3 terminal emulator for GNOME and run it
-sudo apt install -y tilix
-tilix
+  # tilix - Tiling GTK3 terminal emulator for GNOME
+  sudo apt install -y tilix
 
 # Run neofetch to see system information
 neofetch
