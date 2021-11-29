@@ -34,6 +34,16 @@ mkdir -p ~/.local/share/fonts
 cp ~/Downloads/tryhackme/Meslo_Font/*ttf ~/.local/share/fonts
 fc-cache -f -v
 
+# Install other useful packages
+  # tree - list contents of directories in a tree-like format.
+  sudo apt install -y tree
+  # Neofetch - A fast, highly customizable system info script
+  sudo apt install -y neofetch
+  # htop - interactive process viewer
+  sudo apt install -y htop
+  # Tilix - Tiling GTK3 terminal emulator for GNOME
+  sudo apt install -y tilix
+ 
 # Replace the OMZ default $HOME/.zshrc file with this .zshrc content
 echo '''
 # Path to oh-my-zsh installation
@@ -51,24 +61,19 @@ plugins=(
     )
 
 source $ZSH/oh-my-zsh.sh
-''' > $HOME/.zshrc
 
-# Install other useful packages
-  # tree - list contents of directories in a tree-like format.
-  sudo apt install -y tree
-  # Neofetch - A fast, highly customizable system info script
-  sudo apt install -y neofetch
-  # htop - interactive process viewer
-  sudo apt install -y htop
-  # tilix - Tiling GTK3 terminal emulator for GNOME
-  sudo apt install -y tilix
+# VTE Configuration for Tilix terminal https://gnunn1.github.io/tilix-web/manual/vteconfig/
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+''' > $HOME/.zshrc
 
 # Run neofetch to see system information
 neofetch
 
 echo '''If you see this line, the installation is successful.
 You need to manually change the font in your termianl profile to MesloLGS Regular if you want to use Meslo fonts.
-I recommend using "tilix" terminal emulator, which is already installed above.
-Click on tilix logo upper left corner -> preferences -> default -> custom font -> MesloLGS NF Regular.
+I recommend using "Tilix" terminal emulator, which is already installed above.
+Click on Tilix logo upper left corner -> preferences -> default -> custom font -> MesloLGS NF Regular.
 If you are already in zsh, please type "source ~/.zshrc" into the terminal or exit & re-open the terminal to see the new zsh customization.
 If not, you need to type "zsh" to start Z shell first.'''
