@@ -12,11 +12,11 @@ I used these scripts to install oh-my-zsh, my .zshrc configuration, powerlevel10
 - tilix terminal emulator, tree, neofetch, htop
 
 ## Instructions
-- git clone https://github.com/Century300/TryHackMe.git ~/Downloads/TryHackMe
-- cd ~/Downloads/TryHacMe
+- git clone https://github.com/Century300/tryhackme.git ~/Downloads/tryhackme
+- cd ~/Downloads/tryhackme
 - sudo chmod +x install*
 - ./install_zsh_part1.sh
 - _(type Y when you see "Do you want to change your default shell to zsh?")_
 - ./install_zsh_part2.sh
 - source ~/.zshrc
-- sudo rm -rf ~/Downloads/TryHackMe
+- sudo rm -rf ~/Downloads/tryhackme
