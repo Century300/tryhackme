@@ -68,7 +68,7 @@ neofetch
 
 echo '''If you see this line, the installation is successful.
 You need to manually change the font in your termianl profile to MesloLGS Regular if you want to use Meslo fonts.
-I recommend using tilix terminal emulator.
+I recommend using "tilix" terminal emulator, which is already installed above.
 Click on tilix logo upper left corner -> preferences -> default -> custom font -> MesloLGS NF Regular.
 If you are already in zsh, please type "source ~/.zshrc" into the terminal or exit & re-open the terminal to see the new zsh customization.
 If not, you need to type "zsh" to start Z shell first.'''
