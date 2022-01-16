@@ -12,7 +12,7 @@ I used these scripts to install oh-my-zsh, my .zshrc configuration, powerlevel10
 - tilix terminal emulator, tree, neofetch, htop
 
 ## Instructions
-- You need to clone to ~/Downloads/tryhackme2 to install Meslo Fonts properly
+- You need to clone to ~/Downloads/tryhackme to install Meslo Fonts properly
 ```bash
 git clone https://github.com/Century300/tryhackme.git ~/Downloads/tryhackme && cd ~/Downloads/tryhackme && sudo chmod +x install*
 ```
